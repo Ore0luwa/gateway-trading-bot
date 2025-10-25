@@ -9,6 +9,13 @@ package-lock.json
 # Database
 *.db
 *.db-journal
+*.db-shm
+*.db-wal
+
+# Wallet files
+*.json
+bot-wallet.json
+
 
 # Logs
 *.log
@@ -27,3 +34,9 @@ Thumbs.db
 # Build
 dist/
 build/
+
+# Test scripts
+*-test.js
+*-scanner.js
+get-*.js
+create-*.js
