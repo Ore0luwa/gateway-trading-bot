@@ -1,5 +1,12 @@
 # Gateway Trading Bot 🚀
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
+[![Solana](https://img.shields.io/badge/Solana-Devnet%20%7C%20Mainnet-blueviolet)](https://solana.com/)
+[![Gateway](https://img.shields.io/badge/Powered%20by-Sanctum%20Gateway-blue)](https://gateway.sanctum.so/)
+[![Hackathon](https://img.shields.io/badge/Solana-Cypherpunk%20Hackathon-orange)](https://solana.com/)
+
+
 > High-frequency arbitrage trading on Solana powered by Sanctum Gateway
 
 🏆 **Built for Solana Cypherpunk Hackathon**
