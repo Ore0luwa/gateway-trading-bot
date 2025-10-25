@@ -10,7 +10,7 @@
 
 A production-ready trading bot that leverages **Sanctum Gateway** to execute arbitrage trades on Solana with maximum efficiency and minimal cost.
 
-### The Problem We Solved
+### The Problem Solved
 
 Traditional Solana trading bots face an impossible choice:
 - **Option A - RPC Only**: Cheap (0.0001 SOL/tx) but unreliable (~73% success rate)
@@ -110,7 +110,7 @@ curl -X POST http://localhost:3001/api/bot/start
 
 ### 1. Gateway Integration
 
-The core of our bot uses Gateway's powerful transaction delivery:
+The core of the bot uses Gateway's powerful transaction delivery:
 ```javascript
 // Build optimized transaction
 const gatewayTx = await gateway.buildGatewayTransaction(transaction, {
