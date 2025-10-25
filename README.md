@@ -59,7 +59,7 @@ Based on Gateway's proven performance (Jupiter saves hundreds of thousands annua
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/gateway-trading-bot
+git clone https://github.com/Ore0luwa/gateway-trading-bot
 cd gateway-trading-bot
 
 # Setup backend
