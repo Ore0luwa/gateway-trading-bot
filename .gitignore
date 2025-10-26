@@ -40,3 +40,5 @@ build/
 *-scanner.js
 get-*.js
 create-*.js
+.env.mainnet
+.env.devnet
