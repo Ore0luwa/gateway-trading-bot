@@ -57,6 +57,60 @@ Based on Gateway's proven performance (Jupiter saves hundreds of thousands annua
 
 ## 🚀 Quick Start
 
+
+## 🌐 Mainnet Deployment
+
+### Symbolic Mainnet Run (Recommended for Testing)
+
+To prove production-readiness with minimal cost (~$1-2):
+
+```bash
+
+cd backend
+
+# 1. Fund wallet with 0.1 SOL
+
+solana-keygen pubkey bot-wallet.json  # Get your address
+
+# Send 0.1 SOL from your main wallet
+
+# 2. Switch to mainnet
+
+./switch-network.sh mainnet
+
+# 3. Start bot (will execute 5-10 trades)
+
+npm start
+
+# 4. Monitor and stop after desired transactions
+
+# Click "Stop Bot" in dashboard
+
+# 5. Switch back to devnet
+
+./switch-network.sh devnet
+
+```
+
+**Cost**: ~$1-2 for 5-10 transactions  
+
+**Time**: 15-20 minutes  
+
+**Proof**: Real mainnet Gateway savings
+
+### Safety Features
+
+- ✅ Position limit: 0.01 SOL per trade
+
+- ✅ Profit threshold: 0.1% minimum
+
+- ✅ Emergency stop button
+
+- ✅ Real-time monitoring
+
+- ✅ Automatic error handling
+
+
 ### Prerequisites
 
 - Node.js 18+
