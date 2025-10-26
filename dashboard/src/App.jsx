@@ -9,7 +9,8 @@ function App() {
     successRate: 0,
     totalCost: 0,
     gatewaySavings: 0,
-    isRunning: false
+    isRunning: false,
+    network: 'devnet'
   })
   const [transactions, setTransactions] = useState([])
   const [isLoading, setIsLoading] = useState(true)
@@ -24,15 +25,23 @@ function App() {
     return () => clearInterval(interval)
   }, [])
 
-  const fetchStats = async () => {
-    try {
-      const response = await axios.get('http://localhost:3001/api/stats')
-      setStats(response.data)
-      setIsLoading(false)
-    } catch (error) {
-      console.error('Error fetching stats:', error)
-    }
+
+
+
+const fetchStats = async () => {
+  try {
+    const response = await axios.get('http://localhost:3001/api/stats')
+    console.log('📊 Stats received:', response.data) 
+    console.log('🌐 Network:', response.data.network) 
+    setStats(response.data)
+    setIsLoading(false)
+  } catch (error) {
+    console.error('Error fetching stats:', error)
   }
+}
+
+
+
 
   const fetchTransactions = async () => {
     try {
@@ -73,7 +82,13 @@ function App() {
             <p className="text-gray-400">High-Frequency Arbitrage with Sanctum Gateway</p>
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-sm text-gray-400">Devnet</span>
+            <span className={`text-sm font-semibold uppercase ${
+  stats.network === 'mainnet-beta' ? 'text-red-500 bg-red-500/10 px-3 py-1 rounded border border-red-500' : 'text-gray-400'
+}`}>
+  {stats.network === 'mainnet-beta' ? '⚠️ MAINNET' : 'Devnet'}
+</span>
+
+
             <button
               onClick={stats.isRunning ? stopBot : startBot}
               className={`px-6 py-2 rounded-lg font-semibold transition-all ${

@@ -462,12 +462,14 @@ app.get('/api/stats', (req, res) => {
       totalProfit: result.total_profit || 0,
       totalCost: result.total_cost || 0,
       gatewaySavings: result.gateway_savings || 0,
-      isRunning: bot?.isRunning || false
+      isRunning: bot?.isRunning || false,
+      network: process.env.NETWORK || 'devnet'  // ADD THIS LINE IF MISSING
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
+
 
 // Get transactions
 app.get('/api/transactions', (req, res) => {
