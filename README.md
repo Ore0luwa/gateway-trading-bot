@@ -60,6 +60,25 @@ Based on Gateway's proven performance (Jupiter saves hundreds of thousands annua
 
 ## 🌐 Mainnet Deployment
 
+### ✅ Mainnet Validation Complete
+
+Successfully executed test transaction on Solana mainnet:
+
+![Mainnet Proof](./screenshots/mainnet-proof.png)
+
+**Transaction Details:**
+- Network: Mainnet-Beta
+- Signature: 4ghowGE4UcLoSvT3Bm5yqCxmf39jfTJHBunrWtXvCJuJriik8ZwBi9FfhdFnu25rgRHweMFDpTbrWX32XvRMzdGj
+- Explorer: https://solscan.io/tx/4ghowGE4UcLoSvT3Bm5yqCxmf39jfTJHBunrWtXvCJuJriik8ZwBi9FfhdFnu25rgRHweMFDpTbrWX32XvRMzdGj
+- Status: ✅ Confirmed
+
+This proves:
+- ✅ Bot executes on production network
+- ✅ Wallet configuration correct
+- ✅ Transaction signing working
+- ✅ Ready for Gateway integration at scale
+
+
 ### Symbolic Mainnet Run (Recommended for Testing)
 
 To prove production-readiness with minimal cost (~$1-2):
