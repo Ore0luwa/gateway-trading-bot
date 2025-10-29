@@ -369,7 +369,7 @@ MAX_POSITION_SIZE_SOL=0.05
 
 ## 🎥 Demo
 
-**Video Demo**: [Link to demo video]
+**Video Demo**: [DEMO](https://youtu.be/BK9P3tbOBug)
 
 **Live Dashboard**: Screenshots in `/screenshots` folder
 
