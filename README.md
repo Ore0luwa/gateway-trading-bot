@@ -373,7 +373,7 @@ MAX_POSITION_SIZE_SOL=0.05
 
 **Live Dashboard**: Screenshots in `/screenshots` folder
 
-**Twitter Thread**: [Link to Twitter thread explaining the project]
+**Twitter Thread**: [THREAD](https://x.com/AishatOladipup4/status/1983410952415666542)
 
 ## 🤝 Contributing
 
